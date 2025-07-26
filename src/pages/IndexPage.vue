@@ -1,4 +1,8 @@
 <template>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
   <div class="q-pa-md" style="max-width: 400px">
 
     <q-form
@@ -9,10 +13,17 @@
       <q-input
         filled
         v-model="name"
+
         label="ชื่อ-สกุล *"
         hint="กรุณากรอกชื่อ-สกุล"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาใส่ข้อความให้ถูกต้อง' ]"
+
+        label="Your name *"
+        hint="Name and surname"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'Please type something']"
+
       />
 
       <q-input
